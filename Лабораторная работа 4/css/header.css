@@ -1,0 +1,34 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background: #624C91;
+    padding: 0 60px;
+}
+
+.logo_link{
+    margin: 15px 0 16px 0;
+}
+
+.block_lift_link{
+    display: flex;
+    align-items: center;
+}
+
+.link_enter{
+    display: flex;
+    align-items: center;
+    margin-right: 28px;
+}
+
+.link_enter img{
+    margin-right: 28px;
+}
+
+.block_lift_link a *,
+.block_lift_link a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
