@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Registration Page Add preview IMG</title>
+</head>
+<body>
+    <header>
+        <a href="." class="logo_link">
+            <img src="./Photo/logo.svg" alt="">
+        </a>
+        <div class="block_lift_link">
+            <a href="../Лабораторная работа 7/MainCatalogPage_Author.html" class="link_enter">
+                <img src="./Photo/i-user.svg" alt="">
+                <span>@UserAccountLogin</span>
+            </a>
+            <a href="./Add New Post Page.html" class="newPostLink">Новая запись</a>
+            <a href="../Лабораторная работа 4/MainCatalogPage.html">Зарегистрироваться</a>
+        </div>
+    </header>
+    <main>
+        <div class="top_Main">
+            <h1>Добавить запись</h1>
+        </div>
+        <div class="registrationBlock">
+            <form action="" method="post" class="NewPost">
+                <div class="rowForm">
+                    <label for="caption">Заголовок
+                        <input type="text" placeholder="Введите заголовок поста" id="caption" maxlength="255">
+                    </label>
+                </div>
+                <div class="rowForm">
+                    <label for="InputArea">Текст
+                        <textarea id="InputArea" placeholder="Введите текс поста"></textarea>
+                    </label>
+                </div>
+                <div class="rowForm">
+                    <label for="Choice">Выберите категорию
+                        <select id="Choice">
+                            <option value="def">без категории</option>
+                        </select>
+                    </label>
+                </div>
+                <label for="InputFileImg">
+                    <div class="ButtonAreaBorder">
+                        <div class="ButtonArea">
+                                <img src="./Photo/label.svg" alt="">
+                            <span>
+                                Прикрепить файл изображения
+                            </span>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="ImageWindwo"></div>
+                    <input type="file" id="InputFileImg" accept="image/*">
+                </label>
+                <div class="button">
+                    <button type="submit">Опубликовать</button>
+                </div>
+                
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="block_right_link_foot">
+            <a href="#">Об авторе</a>
+            <a href="#">Технологии</a>
+        </div>
+        <span>© Blog, 2022</span>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>

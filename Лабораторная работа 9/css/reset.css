@@ -1,0 +1,41 @@
+html {
+    font-size: 16px;
+    background-color: #F3F3F3;
+  }
+  
+  *, *:before, *:after {
+    font-family: Golos UI VF;
+    box-sizing: border-box;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  button{
+    border: none;
+    cursor: pointer;
+  }
+  label,input{
+    cursor: pointer;
+  }
+
+  a:hover{
+    text-decoration: none;
+  }
+
+  @font-face {
+    font-family: Golos UI VF; 
+    src: url(../fount/Golos-UI_VF.ttf); 
+}
