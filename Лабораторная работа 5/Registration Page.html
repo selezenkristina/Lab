@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Registration Page</title>
+</head>
+<body>
+    <header>
+        <a href="." class="logo_link">
+            <img src="./Photo/logo.svg" alt="">
+        </a>
+        <div class="block_lift_link">
+            <a href="../Лабораторная работа 4/MainCatalogPage.html" class="link_enter">
+                <img src="./Photo/i-user.svg" alt="">
+                <span>Войти</span>
+            </a>
+            <a href="./Registration Page.html">Зарегистрироваться</a>
+        </div>
+    </header>
+    <main>
+        <div class="top_Main">
+            <h1>Регистрация</h1>
+        </div>
+        <div class="registrationBlock">
+            <form action="" method="post">
+                <div class="rowForm">
+                    <label for="name">Имя
+                        <input type="text" placeholder="Имя" id="name">
+                    </label>
+                    <label for="surname">Фамилия
+                        <input type="text" placeholder="Фамилия" id="surname">
+                    </label>
+                </div>
+                <div class="rowForm">
+                    <label for="logName">Логин *
+                        <input type="text" placeholder="Введите логин (обязательно)" id="logName" required>
+                        <div class="LoginCrash">
+                            <span class="no"><img src="./Photo/cross.png" alt="">Только буквы, цифры и символы @.+-_</span>
+                            <span class="no"><img src="./Photo/cross.png" alt="">Не более 150 сиволов</span>
+                        </div>
+                    </label>
+                    <label for="mail">E-mail
+                        <input type="email" placeholder="Введите E-mail" id="mail">
+                    </label>
+                </div>
+                <div class="rowForm">
+                    <label for="FirstPassword">Пароль *
+                        <input type="password" id="FirstPassword" placeholder="Введите пароль" required>
+                        <div class="PasswordCrash">
+                            <span class="no"><img src="./Photo/cross.png" alt="">Минимум 8 символов</span>
+                            <span class="no"><img src="./Photo/cross.png" alt="">Не может состоять только из цифр</span>
+                            <span class="no"><img src="./Photo/cross.png" alt="">Не должен совпадать с логином</span>
+                        </div>
+                    </label>
+                    <label for="LastPassword">Подтверждение пароля *
+                        <input class="pswd no" type="password" id="LastPassword" placeholder="Введите пароль повторно" required>
+                        <div class="PasswordTooCrash">
+                            <span class="no"><img src="./Photo/cross.png" alt="">Пароли не совпадают</span>
+                        </div>
+                    </label>
+                </div>
+                <label for="box">
+                    <input type="checkbox" name="" id="box" checked>
+                    Даю своё согласие на обработку персональных данных
+                </label>
+                <div class="button">
+                    <button type="submit">Зарегистрироваться</button>
+                </div>
+                
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="block_right_link_foot">
+            <a href="#">Об авторе</a>
+            <a href="#">Технологии</a>
+        </div>
+        <span>© Blog, 2022</span>
+    </footer>
+    <script src="./main.js"></script>
+</body>
+</html>

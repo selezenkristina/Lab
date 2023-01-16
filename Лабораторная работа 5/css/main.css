@@ -1,0 +1,166 @@
+main{
+    padding: 60px;
+}
+h1{
+    font-weight: 777;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.rowForm{
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.rowForm label:first-child{
+    padding-right: 10px;
+}
+.rowForm label:last-child{
+    padding-left: 10px;
+}
+
+.rowForm label{
+    display: block;
+    margin-bottom: 4px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(17, 34, 68, 0.5);
+}
+.rowForm input,
+.rowForm textarea,
+.rowForm select{
+    width: 100%;
+    padding: 24px 0px 24px 24px;
+    outline: none;
+    border: 1px solid rgba(17, 34, 68, 0.5);
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #112244;
+}
+
+.rowForm textarea{
+    width: 100%;
+    max-width: 100%;
+    height: 223px;
+}
+
+label{
+    width: 100%;
+}
+
+form{
+    padding: 40px;
+    background: #FFFFFF;
+    border-radius: 8px;    
+}
+
+form>label{
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #222222;
+    margin-bottom: 20px;
+}
+
+form>label>input{
+    width: 17px;
+    height: 17px;
+
+    border: 1px solid #624C90;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+.button *{
+    width: fit-content;
+    padding: 20px 40px;
+    background: #624C90;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+button:disabled{
+    background: #CCCCCC;
+}
+
+input:focus::placeholder{
+    opacity: 0;
+}
+
+.ButtonArea{
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    width: fit-content;
+
+    border: 1px solid #624C90;
+    border-radius: 7px;
+}
+
+.ButtonArea svg{
+    margin-right: 10px;
+}
+
+input[type=file]{
+    display: none;
+}
+
+.NewPost>.rowForm label:last-child{
+    padding-left: 0;
+}
+
+label[for=InputFileImg]{
+    width: fit-content;
+}
+
+.LoginCrash,
+.PasswordCrash,
+.PasswordTooCrash{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 0px 0px 24px;
+}
+
+.LoginCrash span.no,
+.PasswordCrash span.no,
+.PasswordTooCrash span.no{
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    color: rgba(238, 34, 34, 0.9);
+}
+
+.pswd.no,
+.pswd.no::placeholder{
+    color: rgba(238, 34, 34, 0.9);
+    border-color:rgba(238, 34, 34, 0.9);
+}
+
+.LoginCrash span.no.yes,
+.PasswordCrash span.no.yes,
+.PasswordTooCrash span.no.yes{
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    color: rgba(60, 162, 85, 0.9);
+}
+
+.pswd.no.yes,
+.pswd.no.yes::placeholder{
+    color: rgba(60, 162, 85, 0.9);
+    border-color:rgba(60, 162, 85, 0.9);
+}
