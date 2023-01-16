@@ -1,0 +1,100 @@
+.BackgroundModalView{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(98, 76, 144, 0.7);
+}
+
+.modalWindeowsView{
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 30vw;
+    width: 40vw;
+    padding: 28px 32px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(98, 76, 144, 0.5);
+    border-radius: 8px;
+}
+
+.headMoadlView{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headMoadlView>span{
+    cursor:cell;
+    width: 100%;
+    font-style: normal;
+    font-weight: 777;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.headMoadlView>img{
+    cursor: pointer;
+}
+
+.modaEnterForm{
+    display: flex;
+    flex-direction: column;    
+    margin-top: 28px;    
+}
+
+.modaEnterForm>label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(17, 34, 68, 0.5);
+}
+
+.modaEnterForm input{
+    margin-top: 4px;
+    padding: 24px 0px 24px 24px;
+    border: 1px solid rgba(17, 34, 68, 0.5);
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #112244;
+}
+
+.button{
+    display: flex;
+}
+
+.button button{
+    border: none;
+    padding: 20px 40px;
+    background: #624C90;
+    border-radius: 7px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+.button a{
+    margin-left: 20px;
+    text-decoration: none;
+    padding: 20px 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #472A85;
+}
