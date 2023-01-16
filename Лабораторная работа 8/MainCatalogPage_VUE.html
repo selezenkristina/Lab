@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Catalog Page VUE</title>
+</head>
+<div id="application">
+    <header>
+        <a href="." class="logo_link">
+            <img src="./Photo/logo.svg" alt="">
+        </a>
+        <div class="block_lift_link">
+            <a href="#Enter" class="link_enter">
+                <img src="./Photo/i-user.svg" alt="">
+                <span>Войти</span>
+            </a>
+            <a href="#Registration">Зарегистрироваться</a>
+        </div>
+    </header>
+    <main>
+        <div class="top_Main">
+            <h1>Последние публикации</h1>
+        </div>
+        <div class="last_publick_list">
+            <div class="list_item">
+                <div class="rowIteam">
+                    <div v-for="im in infoData" class="iteam_main">
+                        <img v-bind:src="im.image" alt="">
+                        <h3>{{im.title}}</h3>
+                        <p>{{im.intro}}</p>
+
+                        <div class="rowCat">
+                            <div v-for="cat in im.labels" class="cat_item">{{cat}}</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btnAdd">Загрузить ещё 6</button>
+            </div>
+            <div class="list_cat">
+                <h2>Рубрики</h2>
+                <ul>
+                    <li><a class="categortys" href="#">Обучение</a></li>
+                    <li><a class="categortys" href="#">Карьера</a></li>
+                    <li><a class="categortys" href="#">Figma</a></li>
+                    <li><a class="categortys" href="#">Консоль</a></li>
+                    <li><a class="categortys" href="#">Git</a></li>
+                    <li><a class="categortys" href="#">Новость</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="block_right_link_foot">
+            <a href="#">Об авторе</a>
+            <a href="#">Технологии</a>
+        </div>
+        <span>© Blog, 2022</span>
+    </footer>
+</div>
+    <script src="./data.js"></script>
+    <script src="./axios.min.js"></script>
+    <script src="./axios.min.js.map"></script>
+    <script src="./vue.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
