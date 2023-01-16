@@ -1,0 +1,141 @@
+html {
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  body{
+    padding: 12px;
+  }
+
+  header{
+    margin-bottom: 12px;
+  }
+
+  header a{
+    color: black;
+    font-size: 24px;
+    margin-right: 25px;
+  }
+  header a:hover{
+    text-decoration: none;
+  }
+
+  .Logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 6px;
+  }
+
+  .Logo>svg{
+    height: 50px;
+  }
+
+  .Logo>svg:hover{
+    cursor: pointer;
+    fill: #ac8c75;
+    stroke: #ac8c75;
+  }
+
+  main>h1{
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .name_item{
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .item>img{
+    width: 100%;
+  }
+  .item:hover{
+    cursor: pointer;
+  }
+  .item:hover>img{
+    opacity: 0.4;
+  }
+
+  .main-catalog,
+  .catalog{
+    display: flex;
+    gap: 12px;
+  }
+
+  .main-catalog{    
+    flex-direction: column;
+  }
+  
+  .catalog{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog>.item{
+    width: 48%;
+  }
+
+  .promo-catalog{
+    margin-top: 20px;
+  }
+
+  .promo-catalog h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+
+    body{
+        padding: 24px;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .Logo{
+        width: fit-content;
+    }
+
+    .catalog,
+    .main-catalog{
+        gap: 24px;
+    }
+
+    .main-catalog{
+        flex-direction: unset;
+        flex-wrap: wrap;
+    }
+
+    .main-catalog>.item{
+        width: 32%;
+    }
+
+    .catalog>.item{
+        width: 23%;
+    }
+    
+  }
