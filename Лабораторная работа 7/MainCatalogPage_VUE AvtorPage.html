@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/avtorBlock.css">
+    <title>Catalog Page VUE AvtorPage</title>
+</head>
+<div id="application">
+    <header>
+        <a href="." class="logo_link">
+            <img src="./Photo/logo.svg" alt="">
+        </a>
+        <div class="block_lift_link">
+            <a href="#Enter" class="link_enter">
+                <img src="./Photo/i-user.svg" alt="">
+                <span>@UserAccountLogin</span>
+            </a>
+            <a href="../Лабораторная работа 5/Add New Post Page.html">Новая публикация</a>
+            <a href=".">Выйти</a>
+        </div>
+    </header>
+    <main>
+        <div class="last_publick_list">
+            <div class="leftBlock-avtor">
+                <h3 v-html="PersonalData"></h3>
+                <a href="." v-html="NickName"></a>
+                <div class="mainInfoAvtor">Подписчиков:<span v-html="Signer"></span><br>
+                Подписки:<span v-html="Tracking"></span></div>
+                <div class="mainInfoAvtor">Записей: <span v-html="Composition"></span></div>
+                <select id="OptAvtor" v-model="OptSelect">
+                    <option value="def">Без фильтра по авторам</option>
+                    <option v-for="avt in infoAvtor" v-bind:value="avt.Login">{{avt.Name}}</option>
+                </select>
+            </div>
+            <div class="list_item">
+                <div class="rowIteam">
+                    <div v-for="im in FilterPostBySelectAvtor" class="iteam_main">
+                        <img v-bind:src="im.image" alt="">
+                        <h3>{{im.title}}</h3>
+                        <p>{{im.intro}}</p>
+
+                        <div class="rowCat">
+                            <div v-for="cat in im.labels" class="cat_item">{{cat}}</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btnAdd">Загрузить ещё 6</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="block_right_link_foot">
+            <a href="#">Об авторе</a>
+            <a href="#">Технологии</a>
+        </div>
+        <span>© Blog, 2022</span>
+    </footer>
+</div>
+    <script src="./data.js"></script>
+    <script src="./data_Avtors.js"></script>
+    <script src="./vue.min.js"></script>
+    <script src="./mainbyAvtoPage.js"></script>
+</body>
+</html>

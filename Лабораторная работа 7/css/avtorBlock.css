@@ -1,0 +1,66 @@
+a[href="../Лабораторная работа 5/Add New Post Page.html"]{
+    margin-right: 28px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #553B8B;
+    text-decoration: none;
+    padding: 12px 20px;
+
+    background: #FFFFFF;
+    border-radius: 7px;
+}
+
+.list_item{
+    padding-right: 0;
+    padding-left: 10px;
+}
+
+.iteam_main{
+    width: 48.3%;
+}
+
+.leftBlock-avtor{
+    padding-right: 10px;
+    width: 15.8vw;
+    padding: 12px 0px 12px 20px;
+}
+
+.leftBlock-avtor h3{
+    max-width: 120px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.leftBlock-avtor a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #366AF3;
+}
+.mainInfoAvtor{
+    margin-top: 20px;
+}
+
+.mainInfoAvtor,
+.mainInfoAvtor span{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+}
+
+#OptAvtor{
+    margin-top: 10px;
+    padding: 10px;
+    max-width: 200px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+}

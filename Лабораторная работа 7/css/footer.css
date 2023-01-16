@@ -1,0 +1,26 @@
+footer{
+    display: flex;
+    padding: 0 60px;
+    justify-content: space-between;
+}
+
+.block_right_link_foot{
+    margin-bottom: 61px;
+}
+
+.block_right_link_foot a{
+    margin-right: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #366AF3;
+}
+
+footer span{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #999999;
+}
